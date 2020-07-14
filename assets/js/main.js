@@ -1,15 +1,12 @@
-(function($) {
-  
-  "use strict";  
+(function ($) {
+  "use strict";
 
-  $(window).on('load', function() {
-
-
-  /*
+  $(window).on("load", function () {
+    /*
     On + button click add row to table- main form
   */
-  $('#table-add-col').click(function(){
-    var markup = `<tr>
+    $("#table-add-col").click(function () {
+      var markup = `<tr>
                     <td>#</td>
                     <td><input
                         type="text"
@@ -32,14 +29,14 @@
                     </td>
                 </tr>`;
 
-    $(this).parent().siblings('#table-goods').append(markup)
-  })
+      $(this).parent().siblings("#table-goods").append(markup);
+    });
 
     /*
     On + button click add row to table- sub form
   */
- $('#table-content-add-col').click(function(){
-  var markup = `<tr>
+    $("#table-content-add-col").click(function () {
+      var markup = `<tr>
                   <td>#</td>
                   <td><input
                         type="text"
@@ -78,83 +75,87 @@
                   </td>
               </tr>`;
 
-  $(this).parent().siblings('#table-contents').append(markup)
-})
+      $(this).parent().siblings("#table-contents").append(markup);
+    });
 
-
-  /*Page Loader active
+    /*Page Loader active
     ========================================================*/
-    $('#preloader').fadeOut();
+    $("#preloader").fadeOut();
 
-  // Sticky Nav
-    $(window).on('scroll', function() {
-        if ($(window).scrollTop() > 200) {
-            $('.scrolling-navbar').addClass('top-nav-collapse');
-        } else {
-            $('.scrolling-navbar').removeClass('top-nav-collapse');
-        }
+    // Sticky Nav
+    $(window).on("scroll", function () {
+      if ($(window).scrollTop() > 200) {
+        $(".scrolling-navbar").addClass("top-nav-collapse");
+      } else {
+        $(".scrolling-navbar").removeClass("top-nav-collapse");
+      }
     });
 
     /* ==========================================================================
        countdown timer
        ========================================================================== */
-     jQuery('#clock').countdown('2020/08/05',function(event){
-      var $this=jQuery(this).html(event.strftime(''
-      +'<div class="time-entry days"><span>%-D</span> Days</div> '
-      +'<div class="time-entry hours"><span>%H</span> Hours</div> '
-      +'<div class="time-entry minutes"><span>%M</span> Minutes</div> '
-      +'<div class="time-entry seconds"><span>%S</span> Seconds</div> '));
+    jQuery("#clock").countdown("2020/08/05", function (event) {
+      var $this = jQuery(this).html(
+        event.strftime(
+          "" +
+            '<div class="time-entry days"><span>%-D</span> Days</div> ' +
+            '<div class="time-entry hours"><span>%H</span> Hours</div> ' +
+            '<div class="time-entry minutes"><span>%M</span> Minutes</div> ' +
+            '<div class="time-entry seconds"><span>%S</span> Seconds</div> '
+        )
+      );
     });
 
     /* slicknav mobile menu active  */
-    $('.mobile-menu').slicknav({
-        prependTo: '.navbar-header',
-        parentTag: 'liner',
-        allowParentLinks: true,
-        duplicate: true,
-        label: '',
-      });
+    $(".mobile-menu").slicknav({
+      prependTo: ".navbar-header",
+      parentTag: "liner",
+      allowParentLinks: true,
+      duplicate: true,
+      label: "",
+    });
 
-      /* WOW Scroll Spy
+    /* WOW Scroll Spy
     ========================================================*/
-     var wow = new WOW({
+    var wow = new WOW({
       //disabled for mobile
-        mobile: false
+      mobile: false,
     });
     wow.init();
 
     /* Nivo Lightbox 
     ========================================================*/
-    $('.lightbox').nivoLightbox({
-        effect: 'fadeScale',
-        keyboardNav: true,
-      });
+    $(".lightbox").nivoLightbox({
+      effect: "fadeScale",
+      keyboardNav: true,
+    });
 
-    // one page navigation 
-    $('.navbar-nav').onePageNav({
-            currentClass: 'active'
-    }); 
+    // one page navigation
+    $(".navbar-nav").onePageNav({
+      currentClass: "active",
+    });
 
     /* Back Top Link active
     ========================================================*/
-      var offset = 200;
-      var duration = 500;
-      $(window).scroll(function() {
-        if ($(this).scrollTop() > offset) {
-          $('.back-to-top').fadeIn(400);
-        } else {
-          $('.back-to-top').fadeOut(400);
-        }
-      });
+    var offset = 200;
+    var duration = 500;
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > offset) {
+        $(".back-to-top").fadeIn(400);
+      } else {
+        $(".back-to-top").fadeOut(400);
+      }
+    });
 
-      $('.back-to-top').on('click',function(event) {
-        event.preventDefault();
-        $('html, body').animate({
-          scrollTop: 0
-        }, 600);
-        return false;
-      });
-
-  });      
-
-}(jQuery));
+    $(".back-to-top").on("click", function (event) {
+      event.preventDefault();
+      $("html, body").animate(
+        {
+          scrollTop: 0,
+        },
+        600
+      );
+      return false;
+    });
+  });
+})(jQuery);
