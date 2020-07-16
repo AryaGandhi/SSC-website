@@ -228,7 +228,7 @@ ol li {
   box-shadow: none;
   outline: none;
   color: #fff;
-  background: #555555;
+  /* background: #555555; */
 }
 
 .btn-common {

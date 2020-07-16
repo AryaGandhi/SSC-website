@@ -376,7 +376,8 @@
                     </div>
                     <div class="col">
                       <label>Category:</label>
-                      <select name="category" class="custom-select">
+                      <select name="category" class="custom-select category">
+                        <option value="individual">Individual</option>
                         <option value="jointfirm">Joint Firm</option>
                         <option value="llp"
                           >Limited Liability Partnership(LLP)</option
@@ -392,7 +393,29 @@
                       </select>
                     </div>
                   </div>
+
                   <div class="row">
+                    <div class="col">
+                      <label
+                        >Name of Company:<sup style="color: red;">*</sup></label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="companyName"
+                        disabled="true"
+                        id="companyName"
+                      />
+                    </div>
+                    <script>
+                      $(".category").change(function () {
+                        if ($(this).val() !== "individual") {
+                          $("#companyName").prop("disabled", false);
+                        } else {
+                          $("#companyName").prop("disabled", true);
+                        }
+                      });
+                    </script>
                     <div class="col">
                       <label>Address:<sup style="color: red;">*</sup></label>
                       <input
@@ -401,12 +424,12 @@
                         name="appliaddress"
                       />
                     </div>
+                  </div>
+                  <div class="row">
                     <div class="col">
                       <label>Country:<sup style="color: red;">*</sup></label>
                       <input type="text" class="form-control" name="country" />
                     </div>
-                  </div>
-                  <div class="row">
                     <div class="col">
                       <label>State:</label>
                       <select name="state" class="custom-select">
