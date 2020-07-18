@@ -15,6 +15,21 @@
                         placeholder="Enter object here"
                       /></td>
                     <td>
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="brand"
+                        placeholder="Enter brand name here"
+                      />
+                    </td>
+                    <td style="width: 21%;">
+                      <input
+                        type="file"
+                        class="form-control"
+                        name="image"
+                      />
+                    </td>
+                    <td>
                         <a
                         type="button"
                         href="edit-goods-content.html"
@@ -51,7 +66,7 @@
                        placeholder="Enter object here"
                       /></td>
                   <td>
-                    <span class="btn btn-common btn-nv-sty">
+                    <!--<span class="btn btn-common btn-nv-sty">
                         Browse <input 
                         type="file" 
                         style="
@@ -63,7 +78,12 @@
                         outline: none;   
                         cursor: inherit;
                         display: block;">
-                    </span>
+                    </span>-->
+                    <input
+                          type="file"
+                          class="form-control"
+                          name="uploadfile"
+                        />
                   </td>
                   <td>
                       

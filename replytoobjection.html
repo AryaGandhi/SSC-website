@@ -101,12 +101,12 @@
                     >
                   </li>
                   <li>
-                    <a href="filerenewal.html" class="nav-link-1" href=""
+                    <a href="filerenewalnumber.html" class="nav-link-1" href=""
                       >File Renewal</a
                     >
                   </li>
                   <li>
-                    <a href="fileamendment.html" class="nav-link-1" href=""
+                    <a href="fileamendmentnumber.html" class="nav-link-1" href=""
                       >File-Amendment Form</a
                     >
                   </li>
@@ -230,12 +230,12 @@
                 >
               </li>
               <li>
-                <a href="filerenewal.html" class="page-scroll" href=""
+                <a href="filerenewalnumber.html" class="page-scroll" href=""
                   >File Renewal</a
                 >
               </li>
               <li>
-                <a href="fileamendment.html" class="page-scroll" href=""
+                <a href="fileamendmentnumber.html" class="page-scroll" href=""
                   >File-Amendment Form</a
                 >
               </li>
@@ -328,39 +328,36 @@
             Reply to objection
           </h1>
         </div>
-        <div
-          style="
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            padding-bottom: 50px;
-          "
-        >
-          <label style="font-size: 23px; padding-right: 7%;"
-            >Application number:</label
-          >
-          <input
+        <div class="row">
+          <div class="col-0.5 col-md-2"></div>
+          <div class="col-4 col-md-3">
+              <p style="font-size: 21px; padding-top: 13px;">Application Number:</p>
+          </div>
+          <div class="col-4 col-md-2">
+            <input
             type="text"
             class="form-control"
             name="applicationnumber"
-            style="width: 20%; margin-top: 10px;"
+            style="margin-top: 12px;"
           />
-          <button
-            style="margin-left: 10%;"
-            type="button"
-            class="btn btn-common btn-nv-sty"
-            id="proceed"
-          >
-            Proceed
-          </button>
-          <script>
-              $('#proceed').click(function(){
-                $('#upload-form').css('display', 'block')
-              })
-          </script>
+          </div>
+          <div class="col-1 col-md-1"></div>
+          <div class="col-2 col-md-2">
+            <button"
+              type="button"
+              class="btn btn-common btn-nv-sty"
+              id="proceed"
+            >
+              Proceed
+            </button>
+          </div>
         </div>
-
+        <script>
+            $('#proceed').click(function(){
+            $('#upload-form').css('display', 'block')
+            })
+        </script>
+        <br /><br />
         <div class="design" id="upload-form" style="display: none;">
           <p style="text-align: center; font-size: medium;">
             <label style="font-size: 23px; padding-right: 10%;">Reply:</label>
