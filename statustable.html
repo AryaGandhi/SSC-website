@@ -49,7 +49,10 @@
     <!-- Header Area wrapper Starts -->
     <header id="header-wrap">
       <!-- Navbar Start -->
-      <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar">
+      <nav
+        class="navbar navbar-expand-lg fixed-top scrolling-navbar"
+        style="background-color: #fff;"
+      >
         <div class="container">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
@@ -76,7 +79,7 @@
               <li class="nav-item">
                 <a class="nav-link" href="logged-in.html">Home</a>
               </li>
-              <li class="nav-item dropdown active">
+              <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
                   data-toggle="dropdown"
@@ -318,127 +321,131 @@
     </header>
 
     <section class="section-padding">
-      <div class="container">
-        <div
-          class="section-title-header text-center"
-          style="padding-top: 50px; padding-bottom: 50px;"
-        >
-          <br />
-          <h1 class="section-title wow fadeInUp" data-wow-delay="0.2s">
-            Reply to objection
-          </h1>
+        <div class="container">
+            <p style="font-size: 18px; color: red; text-align: center; margin-top: 50px;">(NOT FOR LEGAL USE)</p>
+            <div class="row">
+                <div class="col" style="text-align: left;">
+                    <p style="font-size: 15px;">As on Date : 12/06/2020</p>
+                </div>
+                <div class="col" style="text-align: right;">
+                    <p style="font-size: 15px;"><a href="">View Registration Certificate</a></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col" style="text-align: left;">
+                    <p style="font-size: 15px;">Status : Registered</p>
+                </div>
+                <div class="col" style="text-align: right;">
+                    <p style="font-size: 15px;"><a href="">View Examination Report</a></p>
+                </div>
+            </div>
+            <style>
+                table.info td{
+                  text-align: left;
+                }
+              </style>
+              <table style="width: 100%;" class="info">
+                <tr>
+                    <td>Application Number</td>
+                    <td>321456</td>
+                </tr>
+                <tr>
+                  <td>Application Type</td>
+                  <td>SIS, SSS, SCS</td>
+                </tr>
+                <tr>
+                  <td>Date of Application</td>
+                  <td>21/02/2020</td>
+                </tr>
+                <tr>
+                  <td>State</td>
+                  <td>Maharashtra</td>
+                </tr>
+                <tr>
+                  <td>Country</td>
+                  <td>India</td>
+                </tr>
+                <tr>
+                  <td>Certificate Detail</td>
+                  <td>Certificate No. 2290230 <br /> Dated : 09/10/2019  <br />  Notified in Journal No : 1924</td>
+                </tr>
+                <tr>
+                  <td>Valid Upto/Renewed upto</td>
+                  <td>09/09/2020</td>
+                </tr>
+                <tr>
+                  <td>Proprietor Name</td>
+                  <td>Nikhil Somani</td>
+                </tr>
+                <tr>
+                  <td>Proprietor Address</td>
+                  <td>205, Shri Prasad Apartment, Opposite Tehsil Office, Baliram Peth, Jalgaon- 4252001</td>
+                </tr>
+                <tr>
+                  <td>Email ID</td>
+                  <td>abcdef@gmail.com</td>
+                </tr>
+                <tr>
+                  <td>Attorney Name</td>
+                  <td>Anil Jain</td>
+                </tr>
+                <tr>
+                  <td>Attorney Address</td>
+                  <td>Ram Mandir Ward, Near Maheshwari Bhavan, Bhusawal- 425201</td>
+                </tr>
+                <tr>
+                  <td>Goods & Service Details</td>
+                  <td>
+                    <button
+                    type="button"
+                    class="btn btn-common btn-nv-sty"
+                    data-toggle="modal"
+                    data-target="#exampleModal"
+                  >
+                    View
+                  </button>
+                  </td>
+                </tr>
+            </table><br />
+            <div class="row">
+                <div class="col" style="text-align: center">
+                  <button
+                    type="button"
+                    class="btn btn-common btn-nv-sty"
+                  >
+                    Correspondences and notices
+                  </button>
+                </div>
+                <div class="col" style="text-align: center;">
+                  <button
+                    type="button"
+                    class="btn btn-common btn-nv-sty"
+                  >
+                    Uploaded Documents
+                  </button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col" style="text-align: center;">
+                  <button
+                    type="button"
+                    class="btn btn-common btn-nv-sty"
+                  >
+                    Print
+                  </button>
+                </div>
+                <div class="col" style="text-align: center;">
+                  <button
+                    type="button"
+                    class="btn btn-common btn-nv-sty"
+                  >
+                    Exit
+                  </button>
+                </div>
+            </div>
         </div>
-        <div class="row">
-          <div class="col-0.5 col-md-2"></div>
-          <div class="col-4 col-md-3">
-              <p style="font-size: 21px; padding-top: 13px;">Application Number:</p>
-          </div>
-          <div class="col-4 col-md-2">
-            <input
-            type="text"
-            class="form-control"
-            name="applicationnumber"
-            style="margin-top: 12px;"
-          />
-          </div>
-          <div class="col-1 col-md-1"></div>
-          <div class="col-2 col-md-2">
-            <button"
-              type="button"
-              class="btn btn-common btn-nv-sty"
-              id="proceed"
-            >
-              Proceed
-            </button>
-          </div>
-        </div>
-        <script>
-            $('#proceed').click(function(){
-            $('#upload-form').css('display', 'block')
-            })
-        </script>
-        <br />
-        <div class="design" id="upload-form" style="display: none;">
-          <style>
-            table.info td{
-              text-align: left;
-            }
-          </style>
-          <table style="width: 100%;" class="info">
-            <tr>
-                <td>Application Number</td>
-                <td></td>
-            </tr>
-            <tr>
-              <td>Date of filing</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>Proprietor Code</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>Proprietor Name</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>Proprietor Address</td>
-              <td>101, Crown Plaza, Kubereshwar road, Waghodia Dabhoi ring road, Vadodara, Gujarat</td>
-            </tr>
-            <tr>
-              <td>Agent Name</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>Agent Address</td>
-              <td></td>
-            </tr>
-          </table><br />
-          <p style="text-align: center; font-size: medium;">
-            <label style="font-size: 23px; padding-right: 10%;">Reply:</label>
-            <input
-              class="form-check-input"
-              type="checkbox"
-              value="Terms and Conditions"
-              id="defaultCheck1"
-              name="terms"
-              required
-            />
-            Reply attached.<br /><br />
-          </p>
-          <div class="row">
-            <div class="col"></div>
-            <div class="col">
-              <button type="button" class="btn btn-common btn-nv-sty">
-                Back
-              </button>
-            </div>
-            <div class="col">
-              <button
-                type="button"
-                class="btn btn-common btn-nv-sty"
-                data-toggle="modal"
-                data-target="#exampleModal"
-              >
-                Upload
-              </button>
-            </div>
-            <div class="col">
-              <button type="button" class="btn btn-common btn-nv-sty">
-                Preview
-              </button>
-            </div>
-            <div class="col">
-              <button type="button" class="btn btn-common btn-nv-sty">
-                Submit
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
 
-    <!-- Modal -->
     <div
       class="modal fade"
       id="exampleModal"
@@ -450,7 +457,7 @@
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
-            <p style="font-size: 20px;">Application Number:</p>
+            <p style="font-size: 20px;">Goods and Service Details</p>
             <button
               type="button"
               class="close"
@@ -461,46 +468,32 @@
             </button>
           </div>
           <div class="modal-body">
-            <!-- <p>Application Number:</p> -->
-            <div style="display: flex; flex-direction: row;">
-              <label style="font-size: 17px; padding-right: 5%;"
-                >Upload document for:</label
-              >
-              <select
-                name="uploaddocument"
-                class="custom-select"
-                style="width: 60%;"
-              >
-                <option value="supportingdocuments">Supporting Documents</option>
-                <option value="replytoexamreport"
-                  >Reply to Exam Report(MIS-R)</option
-                >
-              </select>
-            </div>
-            <br />
-            <div style="display: flex; flex-direction: row;">
-              <label style="font-size: 17px; padding-right: 10%;"
-                >Search file:</label
-              >
-              <input
-                type="file"
-                class="form-control"
-                name="amendupload"
-                id="amendupload"
-                style="width: 60%;"
-              />
-            </div>
-            <div>
-              <p style="font-size: 13px;">
-                Note : File should be A4 (max size 5 MB) and Not password
-                protected
-              </p>
-            </div>
-            <div style="text-align: center;">
-              <button type="button" href="" class="btn btn-common btn-nv-sty">
-                Upload
-              </button>
-            </div>
+            <table style="width: 100%;" id="table-goods">
+                <tr>
+                  <th><b>S.N</b></th>
+                  <th><b>Goods and Manufacturing DESCRIPTIONS</b></th>
+                  <th>Brand Name</th>
+                </tr>
+                <tr>
+                  <td>#</td>
+                  <td>
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="object"
+                      placeholder="Enter object here"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="brand"
+                      placeholder="Enter brand name here"
+                    />
+                  </td>
+                </tr>
+              </table>
           </div>
         </div>
       </div>

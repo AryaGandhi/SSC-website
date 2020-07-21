@@ -347,11 +347,11 @@
                   FILE-AMENDMENT FORM
                 </h1>
                 <style>
-                  td{
+                  table.info td{
                     text-align: left;
                   }
                 </style>
-                <table style="width: 100%;">
+                <table style="width: 100%;" class="info">
                   <tr>
                       <td>Application Number</td>
                       <td></td>
@@ -373,28 +373,48 @@
                     <td>101, Crown Plaza, Kubereshwar road, Waghodia Dabhoi ring road, Vadodara, Gujarat</td>
                   </tr>
                   <tr>
-                    <td>Agent/Attorney Name</td>
+                    <td>Agent Name</td>
                     <td></td>
                   </tr>
                   <tr>
-                    <td>Agent/Attorney Address</td>
+                    <td>Agent Address</td>
                     <td></td>
                   </tr>
                 </table><br />
                 <div class="container-fluid br-line"></div><br /><br />
-                <table style="width: 100%;">
+                <table style="width: 100%;" id="table-goods">
                   <tr>
-                    <th>Class Serial no.</th>
-                    <th style="width: 8%;">Class</th>
-                    <th>Goods Description</th>
+                    <th><b>S.N</b></th>
+                    <th><b>Goods and Manufacturing DESCRIPTIONS</b></th>
+                    <th>Brand Name</th>
+                    <th></th>
                   </tr>
                   <tr>
-                      <td>1</td>
-                      <td>30</td>
-                      <td>ehfdh hfsdbj jsbdjzcm fsdj. jwhejshnc hejsjdzchvh jegvj wegfjzh
-                        ejhfahzs ejgfhsgdj,Q JGFJSJG egrfjajs wajgefgwa wjgefj wegefj wegfjzh
-                        wegfjwa jasgf gjwfs wygfsa ajgsjf gjfj
-                      </td>
+                    <td>#</td>
+                    <td>
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="object"
+                        placeholder="Enter object here"
+                      />
+                    </td>
+                    <td>
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="brand"
+                        placeholder="Enter brand name here"
+                      />
+                    </td>
+                    <td>
+                      <a
+                        type="button"
+                        href="edit-goods-content.html"
+                        class="btn btn-common btn-nv-sty"
+                        >Edit</a
+                      >
+                    </td>
                   </tr>
                 </table><br />
                 <div class="container-fluid br-line"></div><br /><br />
@@ -561,18 +581,6 @@
                   </div>
                   <div class="row">
                     <div class="col-4 col-md-3">
-                      <label>Nature of agent:</label>
-                    </div>
-                    <div class="col-8 col-md-4">
-                      <select name="natureofagent" class="custom-select">
-                        <option value="advocate">Advocate</option>
-                        <option value="registeredtrademarkagent">Registered Trademark Agent</option>
-                        <option value="constitutedattorney">Constituted Attorney</option>
-                      </select>
-                    </div>
-                  </div><br />
-                  <div class="row">
-                    <div class="col-4 col-md-3">
                       <label>Registration no.:</label>
                     </div>
                     <div class="col-8 col-md-4">
@@ -583,9 +591,6 @@
                       />
                     </div>
                   </div>
-                  <p>[In case of authoriation of agent, the address of the agent may be mentioned as the address for the service 
-                    of the Applicant or registered Porprietor/Opponent/Third Party as the case may be.]
-                  </p>
                 </div><br />
                 <div class="container-fluid br-line"></div><br /><br />
                 <h5 style="font-size: 24px; text-align: center;">PURPOSE</h5><br />
@@ -595,7 +600,7 @@
                       <label style="margin-right:50px">Request Type:</label>
                     </div>
                     <div class="col-8">
-                      <p style="font-size: 15px;">CORRECTION OF CLERICAL ERROR OR FOR AMENDMENT U/R 37</p>
+                      <p style="font-size: 15px;">AMENDMENT</p>
                     </div>
                   </div>
                   <div class="row">
@@ -625,7 +630,6 @@
                   <h5 style="font-size: 24px; text-align: center;">REQUIRED DOCUMENTS(IF ANY)</h5><br />
                   <select name="uploaddocumentfor" class="custom-select" style="width: 60%;">
                     <option value="supportingdocuments">Supporting Documents</option>
-                    <option value="replytoexamreport">Reply to Exam Report(MIS-R)</option>
                   </select><br /><br />
                   <a href="" data-toggle="modal" data-target="#exampleModal">LIST OF DOCUMENTS ATTACHED>></a>
                 </div><br />
@@ -652,7 +656,6 @@
                       <label style="font-size: 17px; padding-right: 5%;">Upload document for:</label>
                       <select name="natureofagent" class="custom-select" style="width: 60%;">
                           <option value="advocate">Supporting Documents</option>
-                          <option value="registeredtrademarkagent">Reply to Exam Report(MIS-R)</option>
                       </select>
                   </div><br />
                   <div style="display:flex; flex-direction: row; ">

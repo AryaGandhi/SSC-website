@@ -356,7 +356,7 @@
                       <p style="font-size: 15px;">Request type:</p>
                     </div>
                     <div class="col-9">
-                      <p style="font-size: 15px;">RENEWAL OF TRADEMARK</p>
+                      <p style="font-size: 15px;">RENEWAL</p>
                     </div>
                   </div>
                   <div class="row">
@@ -364,16 +364,16 @@
                       <p style="font-size: 15px;">Fee:</p>
                     </div>
                     <div class="col-6">
-                      <p style="font-size: 15px;">9000</p>
+                      <p style="font-size: 15px;">1000</p>
                     </div>
                   </div>
                 </div><br />
                 <style>
-                  td{
+                  table.info td{
                     text-align: left;
                   }
                 </style>
-                <table style="width: 100%;">
+                <table style="width: 100%;" class="info">
                   <tr>
                       <td>Proprietor Name</td>
                       <td></td>
@@ -391,10 +391,6 @@
                     <td></td>
                   </tr>
                   <tr>
-                    <td>Word Mark</td>
-                    <td></td>
-                  </tr>
-                  <tr>
                     <td>Branch</td>
                     <td></td>
                   </tr>
@@ -407,12 +403,8 @@
                     <td>Ahmedabad</td>
                   </tr>
                   <tr>
-                    <td>Trademark no.</td>
+                    <td>Application no.</td>
                     <td>2009163</td>
-                  </tr>
-                  <tr>
-                    <td>Classes</td>
-                    <td>9</td>
                   </tr>
                   <tr>
                     <td>Application Date</td>
@@ -427,28 +419,12 @@
                     <td></td>
                   </tr>
                   <tr>
-                    <td>Certificate Dispatch</td>
-                    <td></td>
-                  </tr>
-                  <tr>
                     <td>Date</td>
                     <td></td>
                   </tr>
                   <tr>
-                    <td>Application Status</td>
-                    <td>Rectification filed</td>
-                  </tr>
-                  <tr>
-                    <td>O-3/RL Letter NO</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>Letter Dispatch Date</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>Trading As</td>
-                    <td></td>
+                    <td>Application Type</td>
+                    <td>SCS, SIS, SSS</td>
                   </tr>
                 </table><br />
                 <div class="design">
@@ -506,31 +482,18 @@
                   <h3 style="text-align: center;">APPLICANT'S AGENT(if any)</h3>
                   <div class="row">
                     <div class="col-4 col-md-3">
-                      <label>Agent/Attorney Type:<sup style="color: red;">*</sup></label>
+                      <label>Agent/Applicant Type:<sup style="color: red;">*</sup></label>
                     </div>
                     <div class="col-8 col-md-4">
                       <select name="agenttype" class="custom-select">
-                        <option value="advocate">Advocate</option>
-                        <option value="registeredtrademarkagent">Registered Trademark Agent</option>
-                        <option value="constitutedattorney">Constituted Attorney</option>
+                        <option value="advocate">Agent</option>
+                        <option value="registeredtrademarkagent">Applicant</option>
                       </select>
                     </div>
                   </div><br />
                   <div class="row">
                     <div class="col-4 col-md-3">
-                      <label>Agent/Attorney Code:<sup style="color: red;">*</sup></label>
-                    </div>
-                    <div class="col-8 col-md-4">
-                      <input
-                        type="text"
-                        class="form-control"
-                        name="agentcode"
-                      />
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-4 col-md-3">
-                      <label>Agent Registration no.:</label>
+                      <label>Agent/Applicant Registration no.:</label>
                     </div>
                     <div class="col-8 col-md-4">
                       <input
@@ -542,7 +505,7 @@
                   </div>
                   <div class="row">
                     <div class="col-4 col-md-3">
-                      <label>Agent/Attorney Name:<sup style="color: red;">*</sup></label>
+                      <label>Agent/Applicant Name:<sup style="color: red;">*</sup></label>
                     </div>
                     <div class="col-8 col-md-5">
                       <input
@@ -554,7 +517,7 @@
                   </div>
                   <div class="row">
                     <div class="col-4 col-md-3">
-                      <label style="margin-right:50px">Agent/Attorney Address:<sup style="color: red;">*</sup></label>
+                      <label style="margin-right:50px">Agent/Applicant Address:<sup style="color: red;">*</sup></label>
                     </div>
                     <div class="col-8 col-md-6">
                       <textarea
@@ -580,7 +543,7 @@
                   </div>
                   <div class="row">
                     <div class="col-4 col-md-3">
-                      <label>Agent Email:<sup style="color: red;">*</sup></label>
+                      <label>Agent/Applicant Email:<sup style="color: red;">*</sup></label>
                     </div>
                     <div class="col-8 col-md-4">
                       <input
@@ -592,7 +555,7 @@
                   </div>
                   <div class="row">
                     <div class="col-4 col-md-3">
-                      <label>Agent Mobile no.:<sup style="color: red;">*</sup></label>
+                      <label>Agent/Applicant Mobile no.:<sup style="color: red;">*</sup></label>
                     </div>
                     <div class="col-8 col-md-4">
                       <input
@@ -606,16 +569,55 @@
                 <div class="container-fluid br-line"></div><br />
                 <div class="design">
                   <h3 style="text-align: center;">TRADEMARK TYPE</h3>
-                  <div class="row">
-                    <div class="col-3"></div>
-                    <div class="col-6">
-                      <input
-                            type="text"
-                            class="form-control"
-                            name="trademark"
-                            placeholder="TRADE MARK"
-                          />
-                    </div>
+                  <table style="width: 100%;" id="table-goods">
+                    <tr>
+                      <th><b>S.N</b></th>
+                      <th><b>Goods and Manufacturing DESCRIPTIONS</b></th>
+                      <th>Brand Name</th>
+                      <th>Upload Image</th>
+                      <th></th>
+                    </tr>
+                    <tr>
+                      <td>#</td>
+                      <td>
+                        <input
+                          type="text"
+                          class="form-control"
+                          name="object"
+                          placeholder="Enter object here"
+                        />
+                      </td>
+                      <td>
+                        <input
+                          type="text"
+                          class="form-control"
+                          name="brand"
+                          placeholder="Enter brand name here"
+                        />
+                      </td>
+                      <td style="width: 21%;">
+                        <input
+                          type="file"
+                          class="form-control"
+                          name="image"
+                        />
+                      </td>
+                      <td>
+                        <a
+                          type="button"
+                          href="edit-goods-content.html"
+                          class="btn btn-common btn-nv-sty"
+                          >Edit</a
+                        >
+                      </td>
+                    </tr>
+                  </table>
+                  <div style="text-align: center;">
+                    <a id="table-add-col">
+                      <button
+                        type="button"
+                        class="btn btn-common btn-nv-sty">Add Product</button>
+                    </a>
                   </div>
                 </div>
                 <div class="container-fluid br-line"></div><br />
