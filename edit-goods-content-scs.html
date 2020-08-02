@@ -41,6 +41,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   </head>
@@ -79,7 +83,7 @@
               <li class="nav-item">
                 <a class="nav-link" href="logged-in.html">Home</a>
               </li>
-              <li class="nav-item dropdown">
+              <li class="nav-item dropdown active">
                 <a
                   class="nav-link dropdown-toggle"
                   data-toggle="dropdown"
@@ -142,7 +146,7 @@
                   </li>
                 </ul>
               </li>
-              <li class="nav-item dropdown active">
+              <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
                   data-toggle="dropdown"
@@ -271,7 +275,106 @@
       </nav>
     </header>
 
-    
+    <!-- form -->
+    <br /><br /><br />
+    <form action="" method="post" enctype="multipart/form-data" id="form">
+      <section id="form-dom" class="services">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div id="form-main">
+                <h1
+                  class="section-title wow fadeInUp animated"
+                  data-wow-delay="0.2s"
+                  style="
+                    visibility: visible;
+                    -webkit-animation-delay: 0.2s;
+                    -moz-animation-delay: 0.2s;
+                    animation-delay: 0.2s;
+                  "
+                >
+                  Edit Goods Content
+                </h1>
+                <div class="design">
+                  <table style="width: 100%;" id="table-contents">
+                    <tr>
+                      <th><b>S.N</b></th>
+                      <th><b>Product</b></th>
+                      <th>Component</th>
+                      <th style="width: 15%;">PDF</th>
+                      <th>Delete</th>
+                    </tr>
+                    <tr>
+                      <td>#</td>
+                      <td>
+                        <input
+                          type="text"
+                          class="form-control"
+                          name="object"
+                          placeholder="Enter object here"
+                        />
+                      </td>
+                      <td>
+                        <input
+                          type="text"
+                          class="form-control"
+                          name="object"
+                          placeholder="Enter object here"
+                        />
+                      </td>
+                      <td style="width: 21%;">
+                        <input
+                          type="file"
+                          class="form-control"
+                          name="uploadfile"
+                        />
+                      </td>
+                      <td></td>
+                    </tr>
+                  </table>
+                  <div style="text-align: center;">
+                    <a
+                      style="
+                        color: #016168;
+                        font-size: large;
+                        cursor: pointer;
+                        padding: 5px;
+                      "
+                      id="table-content-add-col-scs"
+                      ><i class="fa fa-plus"></i
+                    ></a>
+                  </div>
+                </div>
+                <br />
+                <div class="design">
+                  <div class="row">
+                    <div class="col">
+                      <button
+                        type="button"
+                        href=""
+                        class="btn btn-common btn-nv-sty"
+                      >
+                        Save and Resume
+                      </button>
+                    </div>
+                    <div class="col">
+                      <button
+                        type="button"
+                        href=""
+                        class="btn btn-common btn-nv-sty"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="container-fluid br-line"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </form>
 
     <!-- Go to Top Link -->
     <a href="#" class="back-to-top">

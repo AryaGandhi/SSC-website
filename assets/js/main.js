@@ -50,6 +50,71 @@
     /*
     On + button click add row to table- sub form
   */
+    $("#table-content-add-col-scs").click(function () {
+      var markup = `<tr>
+                  <td>#</td>
+                  <td><input
+                        type="text"
+                        class="form-control"
+                        name="object"
+                        placeholder="Enter object here"
+                      /></td>
+                  <td><input
+                       type="text"
+                       class="form-control"
+                       name="object"
+                       placeholder="Enter object here"
+                      /></td>
+                  <td>
+                    <input
+                          type="file"
+                          class="form-control"
+                          name="uploadfile"
+                        />
+                  </td>
+                  <td>
+                      
+                      <button
+                          type="button"
+                          href=""
+                          class="btn btn-common btn-nv-sty"
+                          onclick="$(this).parent().parent().remove()">Delete</button>
+                  </td>
+              </tr>`;
+
+      $(this).parent().siblings("#table-contents").append(markup);
+    });
+
+    
+    $("#table-content-add-col-sts").click(function () {
+      var markup = `<tr>
+                  <td>#</td>
+                  <td><input
+                        type="text"
+                        class="form-control"
+                        name="object"
+                        placeholder="Enter object here"
+                      /></td>
+                  <td>
+                    <input
+                          type="file"
+                          class="form-control"
+                          name="uploadfile"
+                        />
+                  </td>
+                  <td>
+                      
+                      <button
+                          type="button"
+                          href=""
+                          class="btn btn-common btn-nv-sty"
+                          onclick="$(this).parent().parent().remove()">Delete</button>
+                  </td>
+              </tr>`;
+
+      $(this).parent().siblings("#table-contents").append(markup);
+    });
+
     $("#table-content-add-col").click(function () {
       var markup = `<tr>
                   <td>#</td>

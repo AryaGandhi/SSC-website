@@ -2806,6 +2806,14 @@ p.intro-desc {
   background-color: #33c5f1;
 }
 
+.green-button {
+  background-color: #018a3a;
+}
+
+.pink-button {
+  background-color: #ff0156;
+}
+
 .carousel-transparent-mobile {
   position: relative;
   width: 100%;
